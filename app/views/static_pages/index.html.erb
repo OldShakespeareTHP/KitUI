@@ -1,0 +1,266 @@
+<section>
+  <h1>NAVBARS</h1>
+  <nav class="bg_navbar_black d-flex justify-content-between pl-1 pr-2">
+    <button type="button" class="btn link_white"><a href="#">Accueil</a></button>
+    <ul class="list-group list-group-horizontal">
+      <li>
+        <div class="btn-group dropleft">
+          <button type="button" class="btn text-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menu
+          </button>
+          <div class="dropdown-menu border_dropdown">
+            <span class="dropdown-item" href="#"> <a href="#">Mon Profil</a></span>
+            <span class="dropdown-item"><a href="#">Se déconnecter</a></span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <br/>
+  <nav class="bg_navbar_violet d-flex justify-content-between pl-1 pr-2">
+    <button type="button" class="btn link_white"><a href="#">Accueil</a></button>
+    <ul class="list-group list-group-horizontal">
+      <li>
+        <div class="btn-group dropleft">
+          <button type="button" class="btn text-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menu
+          </button>
+          <div class="dropdown-menu border_dropdown">
+            <span class="dropdown-item" href="#"> <a href="#">Mon Profil</a></span>
+            <span class="dropdown-item"><a href="#">Se déconnecter</a></span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</section>
+
+<br/>
+<section>
+  <h1>BANNER</h1>
+  <div class="jumbotron banner bg-dark">
+    <strong><span class="banner-title">Banniere</span></strong>
+    <div class="banner-text">
+      Pour changer la taille de la banière, il suffit de changer la propriété height, avec l'unité vh (soit le pourcentage du viewport).
+      Et ce texte aura toujours pour largeur 50% de celle de la bannière.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="row">
+    <div class="col-6">
+      <h1>FORMULAIRE</h1>
+      <%= form_tag root_path, method:  "get" do %>
+        <div class="">
+          <ul class="list-group m-5">
+            <li>
+              <%= label_tag :first_name %><br/>
+              <%= text_field_tag(name = "first_name")%>
+            </li>
+            <li>
+              <%= label_tag :last_name %><br/>
+              <%= text_field_tag(name = "last_name")%>
+            </li>
+            <li>
+              <%= label_tag :description %><br/>
+              <%= text_field_tag(name = "description")%>
+            </li>
+            <li>
+              <%= label_tag :email %><br/>
+              <%= email_field_tag(name = "email")%>
+            </li>
+            <%= submit_tag "Mettre à jour l'utilisateur"%>
+          <ul>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<br/><br/>
+<h1>CARTES</h1>
+<h2>CARD-COLUMNS POUR LES EVENEMENTS</h2>
+<section class="mt-5 pr-5 pl-5 card-columns">
+  <div class="card my_border zoom mt-4">
+    <img class="card-img-top img-top-height" src="banner.jpg" alt="Card image cap">
+    <div class="card-body m-2 p-2">
+      <div class="card-title text-center">
+          <strong>Titre de l'evenement, carte plus grande</strong>
+      </div>
+      <div class="card-text d-flex flex-column align-items-center">
+            La description de l'evenement.
+            Avec la date de debut.
+            Et le lieu oü il se déroule.
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <a href="#" class="stretched-link text-dark"></a>
+      </div>
+    </div>
+  </div>
+    <div class="card my_border zoom mt-4">
+    <img class="card-img-top" src="banner.jpg" alt="Card image cap">
+    <div class="card-body m-2 p-2">
+      <div class="card-title text-center">
+          <strong>Titre de l'evenement</strong>
+      </div>
+      <div class="card-text d-flex flex-column align-items-center">
+            La description de l'evenement.
+            Avec la date de debut.
+            Et le lieu oü il se déroule.
+            <a href="#" class="stretched-link text-dark"></a>
+      </div>
+    </div>
+  </div>
+    <div class="card my_border zoom mt-4">
+    <img class="card-img-top" src="banner.jpg" alt="Card image cap">
+    <div class="card-body m-2 p-2">
+      <div class="card-title text-center">
+          <strong>Titre de l'evenement</strong>
+      </div>
+      <div class="card-text d-flex flex-column align-items-center">
+            La description de l'evenement.
+            Avec la date de debut.
+            Et le lieu oü il se déroule.
+            <a href="#" class="stretched-link text-dark"></a>
+      </div>
+    </div>
+  </div>
+    <div class="card my_border zoom mt-4">
+    <img class="card-img-top" src="banner.jpg" alt="Card image cap">
+    <div class="card-body m-2 p-2">
+      <div class="card-title text-center">
+          <strong>Titre de l'evenement, carte plus grande</strong>
+      </div>
+      <div class="card-text d-flex flex-column align-items-center">
+            La description de l'evenement.
+            Avec la date de debut.
+            Et le lieu oü il se déroule.
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <a href="#" class="stretched-link text-dark"></a>
+      </div>
+    </div>
+  </div>
+    <div class="card my_border zoom mt-4">
+    <img class="card-img-top" src="banner.jpg" alt="Card image cap">
+    <div class="card-body m-2 p-2">
+      <div class="card-title text-center">
+          <strong>Titre de l'evenement</strong>
+      </div>
+      <div class="card-text d-flex flex-column align-items-center">
+            La description de l'evenement.
+            Avec la date de debut.
+            Et le lieu oü il se déroule.
+            <a href="#" class="stretched-link text-dark"></a>
+      </div>
+    </div>
+  </div>
+    <div class="card my_border zoom mt-4">
+    <img class="card-img-top" src="banner.jpg" alt="Card image cap">
+    <div class="card-body m-2 p-2">
+      <div class="card-title text-center">
+          <strong>Titre de l'evenement</strong>
+      </div>
+      <div class="card-text d-flex flex-column align-items-center">
+            La description de l'evenement.
+            Avec la date de debut.
+            Et le lieu oü il se déroule.
+            <a href="#" class="stretched-link text-dark"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br/><br/><br/>
+<section>
+  <h2>MEDIAS POUR LISTER LES PARTICIPANTS</h2>
+  <br/>
+  <ul class="list-unstyled d-flex flex-column">
+    <li class="media border-violet-bottom">
+      <img class="mr-3" src="media_img.png" alt="Generic placeholder image">
+      <div class="media-body p-4">
+        <h5 class="mt-0 mb-1">List-based media object</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </li>
+    <li class="media border-violet-bottom" >
+      <img class="mr-3" src="media_img.png" alt="Generic placeholder image">
+      <div class="media-body p-4">
+        <h5 class="mt-0 mb-1">List-based media object</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </li>
+    <li class="media border-violet-bottom">
+      <img class="mr-3" src="media_img.png" alt="Generic placeholder image">
+      <div class="media-body p-4">
+        <h5 class="mt-0 mb-1">List-based media object</h5>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </li>
+  </ul>
+</section>
+
+<br/><br/>
+<section>
+  <h2>CARD-DECK POUR LISTER LES VILLES</h2>
+  <br/>
+  <div class="card-deck">
+    <div class="card my_border">
+      <img class="card-img-top" src="paris_card.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Paris</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Dernier evenement ajouté il y a 2 heures</small></p>
+      </div>
+    </div>
+    <div class="card my_border">
+      <img class="card-img-top" src="lyon_card.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Lyon</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Dernier evenement ajouté il y a 2 jours</small></p>
+      </div>
+    </div>
+    <div class="card my_border">
+      <img class="card-img-top" src="bordeaux_card.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Bordeaux</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Dernier evenement ajouté il y a 1 semaine</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br/><br/>
+<section>
+  <div class="media border-violet-bottom">
+    <div>
+      <img class="mr-3" src="media_img.png" alt="Generic placeholder image">
+      <div class="mt-2"><h6>Prenom</h6></div>
+      <div><h6>Nom</h6></div>
+    </div>
+    <div class="media-body p-4" id="commentaire">
+      <h5 class="mt-0 mb-1">List-based media object</h5>
+      <blockquote class="blockquote-footer">Il y a 12 minutes.</blockquote>
+      <img src="#">
+      <br/>
+      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <hr class="border_violet"/>
+      <div class="d-flex justify-content-center">
+        <textarea></textarea>
+        <a href="#" class="text-center btn btn-violet">Poster</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h1>PRESENTATION D'UNE RESSOURCE</h1>
+<section class="padding-5 bg-dark m-5 presentation">
+  <div class="en-tete-image">
+    <img src="img_presentation.jpeg">
+  </div>
+  <div class="en-tete-text">
+    <div class="en-tete-title">TITRE</div>
+  </div>
+</section>
+

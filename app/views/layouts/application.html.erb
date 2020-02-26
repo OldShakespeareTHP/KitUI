@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KitUIPresentation</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body id="main">
+    <%= yield %>
+  </body>
+
+  <footer class="d-flex justify-content-center">
+    <div class="content-footer d-flex justify-content-around">
+      <span><a href="#">A propos</a></span>
+      <span><a href="#">Aide</a></span>
+      <span><a href="#">Emploi</a></span>
+      <span><a href="#">Conditions</a></span>
+      <span><a href="#">Confidentialité</a></span>
+    </div>
+  </footer>
+
+</html>
